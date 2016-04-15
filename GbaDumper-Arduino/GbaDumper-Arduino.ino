@@ -200,22 +200,22 @@ unsigned int readBusValueNew()
 void setBusAsOutput()
 {              
     //      Pin Nr 76543210
-    DDRD = DDRD | B11111100; // setzen, 1 = output
-    DDRB = DDRB | B00111111; // setzen, 1 = output
-    DDRC = DDRC | B00111100; // setzen, 1 = output
+    DDRD = DDRD | B11111100; // set, 1 = output
+    DDRB = DDRB | B00111111; // set, 1 = output
+    DDRC = DDRC | B00111100; // set, 1 = output
 }
 
 void setBusAsInput()
 {
     //      Pin Nr 76543210
-    DDRD = DDRD & B00000011; // löschen, 0 = output           
-    DDRB = DDRB & B11000000; // löschen, 0 = output
-    DDRC = DDRC & B11000011; // löschen, 0 = output
+    DDRD = DDRD & B00000011; // delete, 0 = output           
+    DDRB = DDRB & B11000000; // delete, 0 = output
+    DDRC = DDRC & B11000011; // delete, 0 = output
 }
 
 /*
  ********************
- * Output funktions *
+ * output functions *
  ********************
  */
  

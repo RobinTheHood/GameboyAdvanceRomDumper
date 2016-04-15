@@ -28,9 +28,9 @@ public class RomWriter {
         return zeroCount;
     }
     
-    public void open(String absolutPath)
+    public void open(String absolutePath)
     {
-        File file = new File(absolutPath);
+        File file = new File(absolutePath);
         try {
             writer = new FileOutputStream(file);
         } catch (IOException ex) {
