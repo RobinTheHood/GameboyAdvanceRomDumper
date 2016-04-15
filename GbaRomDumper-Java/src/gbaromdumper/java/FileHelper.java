@@ -21,12 +21,15 @@ public class FileHelper {
         if (i > 0) {
             extension = path.substring(i+1);
         }
-        if (extension.equals("jar")) {
-            i = path.lastIndexOf(File.separator);
-            programmAbsoluteDir = path.substring(0, i);
-        } else {
-            programmAbsoluteDir = new File("").getAbsolutePath();
-        }
+        
+//        if (extension.equals("jar")) {
+//            i = path.lastIndexOf(File.separator);
+//            programmAbsoluteDir = path.substring(0, i);
+//        } else {
+//            programmAbsoluteDir = new File("").getAbsolutePath();
+//        }
+        
+        programmAbsoluteDir = new File("").getAbsolutePath();
         
         return programmAbsoluteDir;
     }
