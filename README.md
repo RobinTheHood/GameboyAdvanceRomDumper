@@ -62,3 +62,4 @@ only use `D/A 0` to `D/A 15`.
 
 ## Links
 - http://web.archive.org/web/20180426222911/http://reinerziegler.de/GBA/gba.htm
+- https://robinwieschendorf.de/2016/04/gameboy-advance-rom-dumper-mit-arduino-uno/
