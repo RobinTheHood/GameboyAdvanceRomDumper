@@ -60,6 +60,11 @@ only use `D/A 0` to `D/A 15`.
 | GND          | GND              |                      |
 
 
+## Pull-up resistor and open drain output
+*I'm not a professional in electronics, but I suspect that the following is important.*
+
+Since the outputs of the ROM chip can only pull the voltage to 0V and the high state is an open switch that is not connected (floating), the input of the Arduino must be set to a HIGH value via a pull-up resistor. The outputs of the ROM chip are probably open drain / open collector outputs. The Arduino includes pull-up resistors that can be used for this and that can be switched on via software.
+
 ## Links
 - http://web.archive.org/web/20180426222911/http://reinerziegler.de/GBA/gba.htm
 - https://robinwieschendorf.de/2016/04/gameboy-advance-rom-dumper-mit-arduino-uno/
